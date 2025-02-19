@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC; /* Light beige for a soft, nostalgic feel */
+    text-align: center;
+}
+
+header {
+    background-color: #556B2F; /* Dark leaf green */
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: #808000; /* Olive green */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #556B2F; /* Dark leaf green */
+}
+
+button {
+    background: #808000; /* Olive green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #6B8E23; /* Slightly lighter green for hover effect */
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #556B2F; /* Dark leaf green */
+    color: white;
+}
+#friends-section {
+    position: relative;  /* Ensures absolute positioning inside */
+    padding: 20px;
+}
+
+.secret-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;  /* Small photograph size */
+    height: 80px;
+    background: url('paper-texture.jpg');  /* Background like an old photograph */
+    border: 2px solid #ccc;  /* Light border for a photo effect */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Courier New', monospace;
+    color: #444;
+    padding: 5px;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;  /* To separate the text */
+}
+
+.text {
+    margin-top: 5px;
+}
