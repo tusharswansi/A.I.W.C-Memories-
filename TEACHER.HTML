@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chalkboard Chronicles</title>
+    <link rel="stylesheet" href="TEACHER.CSS">
+</head>
+<body>
+    <script>
+        function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+}
+
+function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+function submitTribute(id) {
+    alert("Thank you for your tribute to Ms. Maninder Sharma!");
+}
+    </script>
+    <audio id="classroom-sound" loop>
+        <source src="classroom.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <h1>The Chalkboard Chronicles</h1>
+        <p>A tribute to our beloved teachers</p>
+        <div class="teacher-group">
+            <img src="AIWCMEMORY\IMG_20241118_180434.jpg" alt="Teachers Group Photo">
+            <p>"To the mentors who shaped our journey with wisdom, patience, and kindness—thank you for everything!"</p>
+        </div>
+    </header>
+
+    <section class="chalkboard">
+        <div class="teacher special-sharma">
+            <img src="AIWCMEMORY\1740062360985.jpg" alt="Ms. Maninder Sharma">
+            <p>Ms. Maninder teacher (Chemistry)</p>
+            <button class="tribute-btn" onclick="openPopup('teacherSharma')">View Tribute</button>
+        </div>
+        
+        <!-- Ms. Maninder Sharma Tribute Popup -->
+        <div id="teacherSharma" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('teacherSharma')">&times;</span>
+                <h2>Ms. Maninder Sharma</h2>
+                <p><b>Subject:</b> Chemistry</p>
+                <p><b>Memorable Moments:</b> Her jokes made even the toughest  nomenclature naming compound fun!</p>
+                <p class="special-note">"A teacher who could balance kindness and knowledge just like a perfect chemical equation! Thank you for making learning an adventure,  Maninder teacher!"</p>
+                <textarea placeholder="Write your tribute..."></textarea>
+                <button onclick="submitTribute('teacherSharma')">Submit</button>
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- Tribute Pop-ups -->
+    <div id="teacher1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('teacher1')">&times;</span>
+            <h2>Ms. reena teacher</h2>
+            <p><b>Subjects:</b>English</p>
+            <p><b>Memorable Moments:</b> Always wrote 'Keep Trying' on our test papers!</p>
+            <textarea placeholder="Write your tribute..."></textarea>
+            <button onclick="submitTribute('teacher1')">Submit</button>
+        </div>
+    </div>
+
+    <div id="teacher2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('teacher2')">&times;</span>
+            <h2>Ms. Verma</h2>
+            <p><b>Subjects:</b> English</p>
+            <p><b>Memorable Moments:</b> Made literature come alive with her storytelling.</p>
+            <textarea placeholder="Write your tribute..."></textarea>
+            <button onclick="submitTribute('teacher2')">Submit</button>
+        </div>
+    </div>
+
+    <!-- Hidden Tribute Message -->
+    <div class="eraser">
+        <p>Hover over the eraser!</p>
+        <div class="hidden-message">"A teacher’s influence lasts a lifetime."</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
