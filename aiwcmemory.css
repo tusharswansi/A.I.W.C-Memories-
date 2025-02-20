@@ -96,3 +96,39 @@ footer {
 .text {
     margin-top: 5px;
 }
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.slides {
+    display: flex;
+    width: 500%; /* Updated for 5 images */
+    animation: slide 25s infinite; /* Adjust speed for 5 images */
+}
+
+.slides img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(0%); }
+}
